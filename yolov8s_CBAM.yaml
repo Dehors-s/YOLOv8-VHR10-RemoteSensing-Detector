@@ -1,0 +1,40 @@
+# Ultralytics YOLOv8s, with CBAM added after C3 modules in backbone
+# Usage: yolo detect train model=yolov8s_CBAM.yaml ...
+
+nc: 10  # number of classes (NWPU VHR-10)
+depth_multiple: 0.33  # model depth multiple
+width_multiple: 0.50  # layer channel multiple
+
+# Backbone（在C2f后插入CBAM）
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, Conv, [64, 3, 2]]  # 0-P1/2
+  - [-1, 1, Conv, [128, 3, 2]]  # 1-P2/4
+  - [-1, 3, C2f, [128, True]]  # 2-官方C2f模块
+  - [-1, 1, CBAM, []]  # 3-新增CBAM（使用默认kernel_size=7）
+  - [-1, 1, Conv, [256, 3, 2]]  # 4-P3/8
+  - [-1, 6, C2f, [256, True]]  # 5-官方C2f模块
+  - [-1, 1, CBAM, []]  # 6-新增CBAM（使用默认kernel_size=7）
+  - [-1, 1, Conv, [512, 3, 2]]  # 7-P4/16
+  - [-1, 6, C2f, [512, True]]  # 8-官方C2f模块
+  - [-1, 1, CBAM, []]  # 9-新增CBAM（使用默认kernel_size=7）
+  - [-1, 1, Conv, [1024, 3, 2]]  # 10-P5/32
+  - [-1, 3, C2f, [1024, True]]  # 11-官方C2f模块
+  - [-1, 1, CBAM, []]  # 12-新增CBAM（使用默认kernel_size=7）
+  - [-1, 1, SPPF, [1024, 5]]  # 13-保持官方SPPF模块
+
+# Head（保持官方结构，确保特征融合维度匹配）
+head:
+  - [-1, 1, nn.Upsample, [None, 2, 'nearest']]  # 14
+  - [[-1, 8], 1, Concat, [1]]  # 15-融合P4特征（对应官方索引6）
+  - [-1, 3, C2f, [512]]  # 16
+  - [-1, 1, nn.Upsample, [None, 2, 'nearest']]  # 17
+  - [[-1, 4], 1, Concat, [1]]  # 18-融合P3特征（对应官方索引4）
+  - [-1, 3, C2f, [256]]  # 19 (P3/8-small)
+  - [-1, 1, Conv, [256, 3, 2]]  # 20
+  - [[-1, 16], 1, Concat, [1]]  # 21-融合head P4特征
+  - [-1, 3, C2f, [512]]  # 22 (P4/16-medium)
+  - [-1, 1, Conv, [512, 3, 2]]  # 23
+  - [[-1, 13], 1, Concat, [1]]  # 24-融合head P5特征
+  - [-1, 3, C2f, [1024]]  # 25 (P5/32-large)
+  - [[19, 22, 25], 1, Detect, [nc]]  # 26-检测头（保持官方）

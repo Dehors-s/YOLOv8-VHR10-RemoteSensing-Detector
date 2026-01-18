@@ -1,0 +1,6 @@
+train: D:/ptcharm/project/YOLOv8/vhr10_yolo\images\train
+val: D:/ptcharm/project/YOLOv8/vhr10_yolo\images\val
+
+nc: 10
+names: ['airplane', 'ship', 'storage-tank', 'baseball-diamond', 'tennis-court', 'basketball-court', 'ground-track-field', 'harbor', 'bridge', 'vehicle']
+oversample: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0]  # harbor 样本权重加倍

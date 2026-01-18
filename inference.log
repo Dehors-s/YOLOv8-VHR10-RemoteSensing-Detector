@@ -1,0 +1,299 @@
+2025-10-14 16:17:47,173 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 16:17:47,188 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.3.81:5000
+2025-10-14 16:17:47,188 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 16:18:21,717 - INFO - 127.0.0.1 - - [14/Oct/2025 16:18:21] "GET /health HTTP/1.1" 200 -
+2025-10-14 16:22:10,138 - INFO - 127.0.0.1 - - [14/Oct/2025 16:22:10] "GET /health HTTP/1.1" 200 -
+2025-10-14 16:22:12,380 - ERROR - Ԥ�����The shape of the mask [10] at index 0 does not match the shape of the indexed tensor [15120, 14] at index 0
+Traceback (most recent call last):
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 198, in predict
+    results = inference_service.predict(image_rgb, conf_thres, iou_thres)
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 131, in predict
+    detections = non_max_suppression(predictions, conf_thres=conf_thres, iou_thres=iou_thres)
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 89, in non_max_suppression
+    x = x.transpose(0, -1)[xc[xi]]
+IndexError: The shape of the mask [10] at index 0 does not match the shape of the indexed tensor [15120, 14] at index 0
+2025-10-14 16:22:12,382 - INFO - 127.0.0.1 - - [14/Oct/2025 16:22:12] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-10-14 16:28:16,880 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 16:28:16,891 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.3.81:5000
+2025-10-14 16:28:16,891 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 16:28:25,910 - INFO - 127.0.0.1 - - [14/Oct/2025 16:28:25] "GET /health HTTP/1.1" 200 -
+2025-10-14 16:28:28,129 - INFO - Ԥ����ɣ�4��Ŀ�꣬��ʱ0.15��
+2025-10-14 16:28:28,129 - INFO - 127.0.0.1 - - [14/Oct/2025 16:28:28] "POST /predict HTTP/1.1" 200 -
+2025-10-14 17:14:38,572 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 17:14:38,584 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.3.81:5000
+2025-10-14 17:14:38,585 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 17:15:29,925 - INFO - 127.0.0.1 - - [14/Oct/2025 17:15:29] "GET /health HTTP/1.1" 200 -
+2025-10-14 17:15:32,145 - INFO - Ԥ����ɣ�4��Ŀ�꣬��ʱ0.14��
+2025-10-14 17:15:32,146 - INFO - 127.0.0.1 - - [14/Oct/2025 17:15:32] "POST /predict HTTP/1.1" 200 -
+2025-10-14 19:00:30,454 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 19:00:30,470 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.249.153:5000
+2025-10-14 19:00:30,470 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 19:01:13,712 - INFO - 127.0.0.1 - - [14/Oct/2025 19:01:13] "GET /health HTTP/1.1" 200 -
+2025-10-14 19:01:26,969 - INFO - 127.0.0.1 - - [14/Oct/2025 19:01:26] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:06:06,559 - INFO - 127.0.0.1 - - [14/Oct/2025 20:06:06] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:14:40,611 - INFO - 127.0.0.1 - - [14/Oct/2025 20:14:40] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:16:22,477 - INFO - 127.0.0.1 - - [14/Oct/2025 20:16:22] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:23:46,228 - INFO - 127.0.0.1 - - [14/Oct/2025 20:23:46] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:27:41,857 - INFO - 127.0.0.1 - - [14/Oct/2025 20:27:41] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:28:40,270 - INFO - 127.0.0.1 - - [14/Oct/2025 20:28:40] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:36:19,096 - INFO - 127.0.0.1 - - [14/Oct/2025 20:36:19] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:44:19,958 - INFO - 127.0.0.1 - - [14/Oct/2025 20:44:19] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:49:22,075 - INFO - 127.0.0.1 - - [14/Oct/2025 20:49:22] "GET /health HTTP/1.1" 200 -
+2025-10-14 20:50:03,541 - ERROR - Ԥ�����The shape of the mask [10] at index 0 does not match the shape of the indexed tensor [15120, 14] at index 0
+Traceback (most recent call last):
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 198, in predict
+    results = inference_service.predict(image_rgb, conf_thres, iou_thres)
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 131, in predict
+    detections = non_max_suppression(predictions, conf_thres=conf_thres, iou_thres=iou_thres)
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 89, in non_max_suppression
+    x = x.transpose(0, -1)[xc[xi]]
+IndexError: The shape of the mask [10] at index 0 does not match the shape of the indexed tensor [15120, 14] at index 0
+2025-10-14 20:50:03,563 - INFO - 127.0.0.1 - - [14/Oct/2025 20:50:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-10-14 21:13:12,512 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 21:13:12,530 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-14 21:13:12,531 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 21:14:41,082 - INFO - 127.0.0.1 - - [14/Oct/2025 21:14:41] "GET /health HTTP/1.1" 200 -
+2025-10-14 21:15:02,126 - INFO - Ԥ����ɣ�0��Ŀ�꣬��ʱ0.29��
+2025-10-14 21:15:02,127 - INFO - 127.0.0.1 - - [14/Oct/2025 21:15:02] "POST /predict HTTP/1.1" 200 -
+2025-10-14 21:19:09,000 - INFO - 127.0.0.1 - - [14/Oct/2025 21:19:09] "GET /health HTTP/1.1" 200 -
+2025-10-14 21:19:11,192 - INFO - Ԥ����ɣ�0��Ŀ�꣬��ʱ0.11��
+2025-10-14 21:19:11,193 - INFO - 127.0.0.1 - - [14/Oct/2025 21:19:11] "POST /predict HTTP/1.1" 200 -
+2025-10-14 21:19:36,874 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 21:19:36,887 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-14 21:19:36,887 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 21:19:48,456 - INFO - 127.0.0.1 - - [14/Oct/2025 21:19:48] "GET /health HTTP/1.1" 200 -
+2025-10-14 21:19:50,672 - ERROR - Ԥ�����The shape of the mask [10] at index 0 does not match the shape of the indexed tensor [15120, 14] at index 0
+Traceback (most recent call last):
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 198, in predict
+    results = inference_service.predict(image_rgb, conf_thres, iou_thres)
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 131, in predict
+    detections = non_max_suppression(predictions, conf_thres=conf_thres, iou_thres=iou_thres)
+  File "D:\ptcharm\project\YOLOv8\��������v2.py", line 89, in non_max_suppression
+    x = x.transpose(0, -1)[xc[xi]]
+IndexError: The shape of the mask [10] at index 0 does not match the shape of the indexed tensor [15120, 14] at index 0
+2025-10-14 21:19:50,674 - INFO - 127.0.0.1 - - [14/Oct/2025 21:19:50] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-10-14 21:20:18,736 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 21:20:18,751 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-14 21:20:18,751 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 21:20:32,959 - INFO - 127.0.0.1 - - [14/Oct/2025 21:20:32] "GET /health HTTP/1.1" 200 -
+2025-10-14 21:20:35,194 - INFO - Ԥ����ɣ�4��Ŀ�꣬��ʱ0.15��
+2025-10-14 21:20:35,195 - INFO - 127.0.0.1 - - [14/Oct/2025 21:20:35] "POST /predict HTTP/1.1" 200 -
+2025-10-14 21:21:00,014 - INFO - Ԥ����ɣ�4��Ŀ�꣬��ʱ0.17��
+2025-10-14 21:21:00,015 - INFO - 127.0.0.1 - - [14/Oct/2025 21:21:00] "POST /predict HTTP/1.1" 200 -
+2025-10-14 21:39:24,518 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 21:39:24,545 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-14 21:39:24,546 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 21:39:28,387 - INFO - 127.0.0.1 - - [14/Oct/2025 21:39:28] "GET /health HTTP/1.1" 200 -
+2025-10-14 21:39:30,668 - INFO - Ԥ����ɣ�4��Ŀ�꣬��ʱ0.13��
+2025-10-14 21:39:30,669 - INFO - 127.0.0.1 - - [14/Oct/2025 21:39:30] "POST /predict HTTP/1.1" 200 -
+2025-10-14 21:40:15,041 - INFO - 10.222.20.225 - - [14/Oct/2025 21:40:15] "[33mGET / HTTP/1.1[0m" 404 -
+2025-10-14 21:40:15,238 - INFO - 10.222.20.225 - - [14/Oct/2025 21:40:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-14 21:40:41,900 - INFO - 127.0.0.1 - - [14/Oct/2025 21:40:41] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-10-14 21:55:38,943 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 21:55:38,955 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-14 21:55:38,956 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 22:04:58,616 - INFO - Ԥ����ɣ�4��Ŀ�꣬��ʱ0.14��
+2025-10-14 22:04:58,617 - INFO - 127.0.0.1 - - [14/Oct/2025 22:04:58] "POST /predict HTTP/1.1" 200 -
+2025-10-14 22:16:14,672 - INFO - 127.0.0.1 - - [14/Oct/2025 22:16:14] "GET /health HTTP/1.1" 200 -
+2025-10-14 22:43:31,764 - INFO - 127.0.0.1 - - [14/Oct/2025 22:43:31] "GET /health HTTP/1.1" 200 -
+2025-10-14 22:43:33,842 - INFO - 127.0.0.1 - - [14/Oct/2025 22:43:33] "GET /health HTTP/1.1" 200 -
+2025-10-14 22:46:26,355 - INFO - Ԥ����ɣ�4��Ŀ�꣬��ʱ0.15��
+2025-10-14 22:46:26,367 - INFO - 127.0.0.1 - - [14/Oct/2025 22:46:26] "POST /predict HTTP/1.1" 200 -
+2025-10-14 23:08:46,674 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 23:08:46,691 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.249.153:5000
+2025-10-14 23:08:46,691 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 23:08:52,364 - INFO - 127.0.0.1 - - [14/Oct/2025 23:08:52] "GET /health HTTP/1.1" 200 -
+2025-10-14 23:08:54,633 - INFO - Ԥ����ɣ�4��Ŀ�꣬��ʱ0.16��
+2025-10-14 23:08:54,634 - INFO - 127.0.0.1 - - [14/Oct/2025 23:08:54] "POST /predict HTTP/1.1" 200 -
+2025-10-14 23:14:15,723 - INFO - 127.0.0.1 - - [14/Oct/2025 23:14:15] "[33mPOST /predict_image_image HTTP/1.1[0m" 404 -
+2025-10-14 23:15:05,764 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 23:15:05,774 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.249.153:5000
+2025-10-14 23:15:05,774 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 23:15:45,509 - INFO - 127.0.0.1 - - [14/Oct/2025 23:15:45] "[33mPOST /predict_image_image HTTP/1.1[0m" 404 -
+2025-10-14 23:18:36,160 - INFO - ͼ��Ԥ����ɣ�4��Ŀ�꣬��ʱ0.29��
+2025-10-14 23:18:36,164 - INFO - 127.0.0.1 - - [14/Oct/2025 23:18:36] "POST /predict_image HTTP/1.1" 200 -
+2025-10-14 23:20:18,494 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-14 23:20:18,508 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.249.153:5000
+2025-10-14 23:20:18,508 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-14 23:20:55,126 - INFO - 127.0.0.1 - - [14/Oct/2025 23:20:55] "[33mPOST /predict_image_image HTTP/1.1[0m" 404 -
+2025-10-14 23:21:23,238 - INFO - ͼ��Ԥ����ɣ�4��Ŀ�꣬��ʱ0.27��
+2025-10-14 23:21:23,241 - INFO - 127.0.0.1 - - [14/Oct/2025 23:21:23] "POST /predict_image HTTP/1.1" 200 -
+2025-10-14 23:24:06,715 - INFO - 127.0.0.1 - - [14/Oct/2025 23:24:06] "GET /health HTTP/1.1" 200 -
+2025-10-14 23:27:44,578 - INFO - 127.0.0.1 - - [14/Oct/2025 23:27:44] "GET /health HTTP/1.1" 200 -
+2025-10-14 23:28:58,431 - INFO - 127.0.0.1 - - [14/Oct/2025 23:28:58] "GET /health HTTP/1.1" 200 -
+2025-10-15 13:59:56,781 - INFO - ģ�ͼ������: best.onnx (����ߴ�: 960x960)
+2025-10-15 13:59:56,801 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-15 13:59:56,801 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-15 14:00:40,937 - INFO - 127.0.0.1 - - [15/Oct/2025 14:00:40] "[33mGET / HTTP/1.1[0m" 404 -
+2025-10-15 14:00:41,317 - INFO - 127.0.0.1 - - [15/Oct/2025 14:00:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-15 14:01:17,426 - INFO - [代理服务v4.py:484] - 正在初始化YOLOv8推理服务...
+2025-10-15 14:01:17,641 - INFO - [代理服务v4.py:228] - 模型加载完成: best.onnx (输入尺寸: 960x960)
+2025-10-15 14:01:17,642 - INFO - [代理服务v4.py:467] - 推理服务初始化成功
+2025-10-15 14:01:17,642 - INFO - [代理服务v4.py:486] - 服务启动成功！
+2025-10-15 14:01:17,642 - INFO - [代理服务v4.py:487] - 本地访问: http://localhost:5000
+2025-10-15 14:01:17,642 - INFO - [代理服务v4.py:488] - 网络访问: http://10.222.20.225:5000
+2025-10-15 14:01:17,642 - INFO - [代理服务v4.py:489] - 其他设备可以使用以下URL: http://10.222.20.225:5000/predict
+2025-10-15 14:01:17,659 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-15 14:01:17,659 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-10-15 14:01:50,019 - INFO - [_internal.py:97] - 10.222.20.225 - - [15/Oct/2025 14:01:50] "GET / HTTP/1.1" 200 -
+2025-10-15 14:01:50,379 - INFO - [_internal.py:97] - 10.222.20.225 - - [15/Oct/2025 14:01:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-15 14:04:30,517 - INFO - [_internal.py:97] - 10.222.20.225 - - [15/Oct/2025 14:04:30] "GET / HTTP/1.1" 200 -
+2025-10-15 14:04:46,935 - INFO - [代理服务v4.py:417] - 收到图像预测请求来自: 10.222.24.79
+2025-10-15 14:04:47,178 - INFO - [代理服务v4.py:447] - 图像预测完成：客户端10.222.24.79，4个目标，耗时0.25秒
+2025-10-15 14:04:47,179 - INFO - [_internal.py:97] - 10.222.24.79 - - [15/Oct/2025 14:04:47] "POST /predict_image HTTP/1.1" 200 -
+2025-10-17 22:18:32,576 - INFO - [代理服务v4联网版.py:484] - 正在初始化YOLOv8推理服务...
+2025-10-17 22:18:32,761 - INFO - [代理服务v4联网版.py:228] - 模型加载完成: best.onnx (输入尺寸: 960x960)
+2025-10-17 22:18:32,761 - INFO - [代理服务v4联网版.py:467] - 推理服务初始化成功
+2025-10-17 22:18:32,761 - INFO - [代理服务v4联网版.py:486] - 服务启动成功！
+2025-10-17 22:18:32,761 - INFO - [代理服务v4联网版.py:487] - 本地访问: http://localhost:5000
+2025-10-17 22:18:32,761 - INFO - [代理服务v4联网版.py:488] - 网络访问: http://10.222.20.225:5000
+2025-10-17 22:18:32,761 - INFO - [代理服务v4联网版.py:489] - 其他设备可以使用以下URL: http://10.222.20.225:5000/predict
+2025-10-17 22:18:32,778 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-17 22:18:32,778 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-10-17 22:19:03,620 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 22:19:03] "[33mPOST /predict_image_image HTTP/1.1[0m" 404 -
+2025-10-17 22:19:42,367 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 22:19:42] "[33mPOST /predict_image_image HTTP/1.1[0m" 404 -
+2025-10-17 22:19:59,668 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 22:19:59] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-10-17 22:20:15,289 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 22:20:15] "GET / HTTP/1.1" 200 -
+2025-10-17 22:20:15,510 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 22:20:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 22:20:21,339 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 22:20:21] "GET /health HTTP/1.1" 200 -
+2025-10-17 22:20:21,534 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 22:20:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-17 22:20:30,049 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 22:20:30] "GET / HTTP/1.1" 200 -
+2025-10-17 22:21:16,702 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 22:21:16] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-10-17 22:21:41,658 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 22:21:41] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-10-17 22:26:47,940 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 10.222.20.225
+2025-10-17 22:26:48,112 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端10.222.20.225，1个目标，耗时0.18秒
+2025-10-17 22:26:48,113 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 22:26:48] "POST /predict HTTP/1.1" 200 -
+2025-10-17 22:33:24,574 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 22:33:24] "GET /health HTTP/1.1" 200 -
+2025-10-17 22:38:57,318 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 22:38:57] "GET /health HTTP/1.1" 200 -
+2025-10-17 23:29:19,591 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 23:29:19] "GET /health HTTP/1.1" 200 -
+2025-10-17 23:31:07,801 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 10.222.20.225
+2025-10-17 23:31:07,971 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端10.222.20.225，1个目标，耗时0.18秒
+2025-10-17 23:31:07,973 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 23:31:07] "POST /predict HTTP/1.1" 200 -
+2025-10-17 23:32:49,069 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 23:32:49] "GET /health HTTP/1.1" 200 -
+2025-10-17 23:33:31,792 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 10.222.20.225
+2025-10-17 23:33:31,906 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端10.222.20.225，1个目标，耗时0.12秒
+2025-10-17 23:33:31,924 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 23:33:31] "POST /predict HTTP/1.1" 200 -
+2025-10-17 23:36:25,976 - INFO - [_internal.py:97] - 127.0.0.1 - - [17/Oct/2025 23:36:25] "GET /health HTTP/1.1" 200 -
+2025-10-17 23:40:04,807 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 10.222.20.225
+2025-10-17 23:40:04,970 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端10.222.20.225，3个目标，耗时0.16秒
+2025-10-17 23:40:04,972 - INFO - [_internal.py:97] - 10.222.20.225 - - [17/Oct/2025 23:40:04] "POST /predict HTTP/1.1" 200 -
+2025-10-20 20:02:43,155 - INFO - [代理服务v4联网版.py:484] - 正在初始化YOLOv8推理服务...
+2025-10-20 20:02:43,373 - INFO - [代理服务v4联网版.py:228] - 模型加载完成: best.onnx (输入尺寸: 960x960)
+2025-10-20 20:02:43,373 - INFO - [代理服务v4联网版.py:467] - 推理服务初始化成功
+2025-10-20 20:02:43,373 - INFO - [代理服务v4联网版.py:486] - 服务启动成功！
+2025-10-20 20:02:43,373 - INFO - [代理服务v4联网版.py:487] - 本地访问: http://localhost:5000
+2025-10-20 20:02:43,373 - INFO - [代理服务v4联网版.py:488] - 网络访问: http://192.168.177.153:5000
+2025-10-20 20:02:43,373 - INFO - [代理服务v4联网版.py:489] - 其他设备可以使用以下URL: http://192.168.177.153:5000/predict
+2025-10-20 20:02:43,395 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.177.153:5000
+2025-10-20 20:02:43,395 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-10-20 20:02:47,323 - INFO - [_internal.py:97] - 127.0.0.1 - - [20/Oct/2025 20:02:47] "GET / HTTP/1.1" 200 -
+2025-10-20 20:02:47,589 - INFO - [_internal.py:97] - 127.0.0.1 - - [20/Oct/2025 20:02:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-20 20:04:34,129 - INFO - [代理服务v4联网版.py:417] - 收到图像预测请求来自: 192.168.177.153
+2025-10-20 20:04:35,402 - INFO - [代理服务v4联网版.py:447] - 图像预测完成：客户端192.168.177.153，4个目标，耗时1.25秒
+2025-10-20 20:04:35,407 - INFO - [_internal.py:97] - 192.168.177.153 - - [20/Oct/2025 20:04:35] "POST /predict_image HTTP/1.1" 200 -
+2025-10-20 20:05:15,060 - INFO - [代理服务v4联网版.py:417] - 收到图像预测请求来自: 192.168.177.153
+2025-10-20 20:05:15,756 - INFO - [代理服务v4联网版.py:447] - 图像预测完成：客户端192.168.177.153，4个目标，耗时0.67秒
+2025-10-20 20:05:15,768 - INFO - [_internal.py:97] - 192.168.177.153 - - [20/Oct/2025 20:05:15] "POST /predict_image HTTP/1.1" 200 -
+2025-10-20 20:06:41,754 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 192.168.177.153
+2025-10-20 20:06:42,451 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端192.168.177.153，0个目标，耗时0.70秒
+2025-10-20 20:06:42,454 - INFO - [_internal.py:97] - 192.168.177.153 - - [20/Oct/2025 20:06:42] "POST /predict HTTP/1.1" 200 -
+2025-10-20 20:16:51,055 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 192.168.177.153
+2025-10-20 20:16:51,785 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端192.168.177.153，3个目标，耗时0.73秒
+2025-10-20 20:16:51,786 - INFO - [_internal.py:97] - 192.168.177.153 - - [20/Oct/2025 20:16:51] "POST /predict HTTP/1.1" 200 -
+2025-10-20 22:07:32,972 - INFO - [_internal.py:97] - 127.0.0.1 - - [20/Oct/2025 22:07:32] "GET /health HTTP/1.1" 200 -
+2025-10-20 22:16:08,129 - INFO - [代理服务v4联网版.py:484] - 正在初始化YOLOv8推理服务...
+2025-10-20 22:16:08,282 - INFO - [代理服务v4联网版.py:228] - 模型加载完成: best.onnx (输入尺寸: 960x960)
+2025-10-20 22:16:08,282 - INFO - [代理服务v4联网版.py:467] - 推理服务初始化成功
+2025-10-20 22:16:08,282 - INFO - [代理服务v4联网版.py:486] - 服务启动成功！
+2025-10-20 22:16:08,282 - INFO - [代理服务v4联网版.py:487] - 本地访问: http://localhost:5000
+2025-10-20 22:16:08,282 - INFO - [代理服务v4联网版.py:488] - 网络访问: http://10.222.20.225:5000
+2025-10-20 22:16:08,282 - INFO - [代理服务v4联网版.py:489] - 其他设备可以使用以下URL: http://10.222.20.225:5000/predict
+2025-10-20 22:16:08,293 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-20 22:16:08,293 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-10-20 22:16:11,221 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:16:11] "GET / HTTP/1.1" 200 -
+2025-10-20 22:16:11,441 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:16:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-20 22:16:40,798 - INFO - [代理服务v4联网版.py:417] - 收到图像预测请求来自: 10.222.20.225
+2025-10-20 22:16:40,926 - INFO - [代理服务v4联网版.py:447] - 图像预测完成：客户端10.222.20.225，4个目标，耗时0.12秒
+2025-10-20 22:16:40,927 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:16:40] "POST /predict_image HTTP/1.1" 200 -
+2025-10-20 22:20:07,108 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 10.222.20.225
+2025-10-20 22:20:07,222 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端10.222.20.225，3个目标，耗时0.11秒
+2025-10-20 22:20:07,222 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:20:07] "POST /predict HTTP/1.1" 200 -
+2025-10-20 22:25:25,047 - INFO - [代理服务v4联网版.py:417] - 收到图像预测请求来自: 10.222.20.225
+2025-10-20 22:25:25,149 - INFO - [代理服务v4联网版.py:447] - 图像预测完成：客户端10.222.20.225，4个目标，耗时0.10秒
+2025-10-20 22:25:25,150 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:25:25] "POST /predict_image HTTP/1.1" 200 -
+2025-10-20 22:27:48,484 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 10.222.20.225
+2025-10-20 22:27:48,574 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端10.222.20.225，3个目标，耗时0.09秒
+2025-10-20 22:27:48,574 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:27:48] "POST /predict HTTP/1.1" 200 -
+2025-10-20 22:29:18,168 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:29:18] "GET / HTTP/1.1" 200 -
+2025-10-20 22:32:27,273 - INFO - [代理服务v4联网版.py:417] - 收到图像预测请求来自: 10.222.20.225
+2025-10-20 22:32:27,368 - INFO - [代理服务v4联网版.py:447] - 图像预测完成：客户端10.222.20.225，4个目标，耗时0.09秒
+2025-10-20 22:32:27,370 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:32:27] "POST /predict_image HTTP/1.1" 200 -
+2025-10-20 22:34:31,682 - INFO - [代理服务v4联网版.py:361] - 收到预测请求来自: 10.222.20.225
+2025-10-20 22:34:31,769 - INFO - [代理服务v4联网版.py:385] - 预测完成：客户端10.222.20.225，2个目标，耗时0.09秒
+2025-10-20 22:34:31,770 - INFO - [_internal.py:97] - 10.222.20.225 - - [20/Oct/2025 22:34:31] "POST /predict HTTP/1.1" 200 -
+2025-10-21 12:50:07,640 - INFO - [代理服务v4联网版.py:484] - 正在初始化YOLOv8推理服务...
+2025-10-21 12:50:07,790 - INFO - [代理服务v4联网版.py:228] - 模型加载完成: best.onnx (输入尺寸: 960x960)
+2025-10-21 12:50:07,790 - INFO - [代理服务v4联网版.py:467] - 推理服务初始化成功
+2025-10-21 12:50:07,790 - INFO - [代理服务v4联网版.py:486] - 服务启动成功！
+2025-10-21 12:50:07,790 - INFO - [代理服务v4联网版.py:487] - 本地访问: http://localhost:5000
+2025-10-21 12:50:07,790 - INFO - [代理服务v4联网版.py:488] - 网络访问: http://10.222.20.225:5000
+2025-10-21 12:50:07,790 - INFO - [代理服务v4联网版.py:489] - 其他设备可以使用以下URL: http://10.222.20.225:5000/predict
+2025-10-21 12:50:07,807 - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.222.20.225:5000
+2025-10-21 12:50:07,807 - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-10-21 12:50:12,452 - INFO - [_internal.py:97] - 10.222.20.225 - - [21/Oct/2025 12:50:12] "GET / HTTP/1.1" 200 -
+2025-10-21 12:50:12,646 - INFO - [_internal.py:97] - 10.222.20.225 - - [21/Oct/2025 12:50:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-21 12:50:28,641 - INFO - [_internal.py:97] - 127.0.0.1 - - [21/Oct/2025 12:50:28] "GET /health HTTP/1.1" 200 -

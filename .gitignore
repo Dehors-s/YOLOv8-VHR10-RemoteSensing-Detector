@@ -1,0 +1,7 @@
+mnist_detection/
+NWPU VHR-10 dataset/
+vhr10_yolo/
+run/
+*.jpg
+*.jpeg
+*.png
